@@ -20,7 +20,7 @@ namespace AquamarineCalculator
         private void button1_Click(object sender, EventArgs e)
         {
             int num1 = Convert.ToInt32(richTextBox1.Text);
-            int num2 = Convert.ToInt32(richTextBox1.Text);
+            int num2 = Convert.ToInt32(richTextBox2.Text);
             int outputI = num1 + num2;
             string output = outputI.ToString();
             richTextBox3.Text = output;
@@ -30,7 +30,7 @@ namespace AquamarineCalculator
         private void button2_Click(object sender, EventArgs e)
         {
             int num1 = Convert.ToInt32(richTextBox1.Text);
-            int num2 = Convert.ToInt32(richTextBox1.Text);
+            int num2 = Convert.ToInt32(richTextBox2.Text);
             int outputI = num1 - num2;
             string output = outputI.ToString();
             richTextBox3.Text = output;
@@ -39,7 +39,7 @@ namespace AquamarineCalculator
         private void button3_Click(object sender, EventArgs e)
         {
             int num1 = Convert.ToInt32(richTextBox1.Text);
-            int num2 = Convert.ToInt32(richTextBox1.Text);
+            int num2 = Convert.ToInt32(richTextBox2.Text);
             int outputI = num1 * num2;
             string output = outputI.ToString();
             richTextBox3.Text = output;
@@ -48,7 +48,7 @@ namespace AquamarineCalculator
         private void button4_Click(object sender, EventArgs e)
         {
             int num1 = Convert.ToInt32(richTextBox1.Text);
-            int num2 = Convert.ToInt32(richTextBox1.Text);
+            int num2 = Convert.ToInt32(richTextBox2.Text);
             int outputI = num1 / num2;
             string output = outputI.ToString();
             richTextBox3.Text = output;
