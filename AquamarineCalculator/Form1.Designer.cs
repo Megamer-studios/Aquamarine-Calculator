@@ -42,7 +42,6 @@
             richTextBox2 = new RichTextBox();
             richTextBox1 = new RichTextBox();
             label1 = new Label();
-            label3 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox4.SuspendLayout();
@@ -54,7 +53,7 @@
             groupBox1.Controls.Add(button5);
             groupBox1.Controls.Add(richTextBox3);
             groupBox1.ForeColor = SystemColors.Control;
-            groupBox1.Location = new Point(12, 21);
+            groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(314, 124);
             groupBox1.TabIndex = 1;
@@ -197,24 +196,12 @@
             label1.TabIndex = 3;
             label1.Text = "Aquamarine Calculator ©2024";
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.ControlLightLight;
-            label3.Location = new Point(12, 5);
-            label3.Name = "label3";
-            label3.Size = new Size(209, 13);
-            label3.TabIndex = 5;
-            label3.Text = "Aquamarine Natural Number Calculator";
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateGray;
             ClientSize = new Size(338, 450);
-            Controls.Add(label3);
             Controls.Add(label1);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -244,7 +231,6 @@
         private Button button3;
         private Button button2;
         private Label label1;
-        private Label label3;
         private Button button5;
     }
 }
