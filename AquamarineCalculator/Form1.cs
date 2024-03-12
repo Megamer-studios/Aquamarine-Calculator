@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace AquamarineCalculator
 {
     public partial class Form1 : Form
@@ -19,8 +21,8 @@ namespace AquamarineCalculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int num1 = Convert.ToInt32(richTextBox1.Text);
-            int num2 = Convert.ToInt32(richTextBox2.Text);
+            float num1 = float.Parse(richTextBox1.Text, CultureInfo.InvariantCulture);
+            float num2 = float.Parse(richTextBox2.Text, CultureInfo.InvariantCulture);
             float outputI = num1 + num2;
             string output = outputI.ToString();
             richTextBox3.Text = output;
@@ -29,8 +31,8 @@ namespace AquamarineCalculator
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int num1 = Convert.ToInt32(richTextBox1.Text);
-            int num2 = Convert.ToInt32(richTextBox2.Text);
+            float num1 = float.Parse(richTextBox1.Text, CultureInfo.InvariantCulture);
+            float num2 = float.Parse(richTextBox2.Text, CultureInfo.InvariantCulture);
             float outputI = num1 - num2;
             string output = outputI.ToString();
             richTextBox3.Text = output;
@@ -38,8 +40,8 @@ namespace AquamarineCalculator
 
         private void button3_Click(object sender, EventArgs e)
         {
-            int num1 = Convert.ToInt32(richTextBox1.Text);
-            int num2 = Convert.ToInt32(richTextBox2.Text);
+            float num1 = float.Parse(richTextBox1.Text, CultureInfo.InvariantCulture);
+            float num2 = float.Parse(richTextBox2.Text, CultureInfo.InvariantCulture);
             float outputI = num1 * num2;
             string output = outputI.ToString();
             richTextBox3.Text = output;
@@ -47,8 +49,8 @@ namespace AquamarineCalculator
 
         private void button4_Click(object sender, EventArgs e)
         {
-            int num1 = Convert.ToInt32(richTextBox1.Text);
-            int num2 = Convert.ToInt32(richTextBox2.Text);
+            float num1 = float.Parse(richTextBox1.Text, CultureInfo.InvariantCulture);
+            float num2 = float.Parse(richTextBox2.Text, CultureInfo.InvariantCulture);
             float outputI = num1 / num2;
             string output = outputI.ToString();
             richTextBox3.Text = output;
@@ -56,7 +58,7 @@ namespace AquamarineCalculator
 
         private void richTextBox3_TextChanged(object sender, EventArgs e)
         {
-            // forker note: the author of this IS A FEMBOY
+
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
